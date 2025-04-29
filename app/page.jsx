@@ -1,47 +1,28 @@
 import React from "react";
-import Link from "next/link";
+import Head from "next/head";
+import Header from "@/components/header";
+import Section1 from "./section1/page";
+import Section2 from "./section2/page";
+import Section3 from "./section3/page";
+import Footer from "@/components/footer/page";
 
-const Home = () => {
+const App = () => {
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-      <div className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition duration-300 border border-gray-200 w-[200px] ">
-        <div className="flex flex-col gap-4 text-center">
-          <Link
-            className="text-xl font-semibold text-blue-600 hover:underline cursor-pointer"
-            href="/dashboard/posts"
-          >
-            Posts
-          </Link>
-          <Link
-            className="text-xl font-semibold text-blue-600 hover:underline cursor-pointer"
-            href="/dashboard/comments"
-          >
-            Comments
-          </Link>
+    <div>
+      <Head>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        />
+      </Head>
 
-
-          <Link
-            className="text-xl font-semibold text-blue-600 hover:underline cursor-pointer"
-            href="/dashboard/albums"
-          >
-            Albums
-          </Link>
-          <Link
-            className="text-xl font-semibold text-blue-600 hover:underline cursor-pointer"
-            href="/dashboard/todos"
-          >
-            Todos
-          </Link>
-          <Link
-            className="text-xl font-semibold text-blue-600 hover:underline cursor-pointer"
-            href="/dashboard/users"
-          >
-            Users
-          </Link>
-        </div>
-      </div>
+      <Header />
+      <Section1 />
+      <Section2 />
+      <Section3 />
+      <Footer />
     </div>
   );
 };
 
-export default Home;
+export default App;
