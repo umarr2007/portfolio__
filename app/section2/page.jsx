@@ -1,98 +1,59 @@
 import React from "react";
-import Image from "next/image";
 import Head from "next/head";
-
-<Head>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-  />
-</Head>;
+import Image from "next/image";
 
 const Section2 = () => {
   return (
-    <div>
-      <div className="container max-w-[1440px] mx-auto">
-        <div className="platform_wrapper">
-          <div className="platform_text mt-[180px]">
-            <h1 className="font-bold text-[36px] leading-[1.8] text-[#000] text-center">
-              Yangi Avlod{" "}
-              <span className="text-[#FFD700]"> Ta'lim Platformasi</span>
-            </h1>
-            <p className="font-normal text-[18px] leading-[1.6] text-center text-[rgba(1,_5,_20,_0.8)] mt-[30px]">
-              Niners — zamonaviy texnologiyalar yordamida o‘quvchilar va <br />
-              ustozlarni birlashtiruvchi, samarali va ishonchli ta’lim
-              platformasi.
-            </p>
+    <>
+      <Head>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        />
+      </Head>
+
+      <section>
+        <div className="container max-w-[1440px] mx-auto">
+          <div className="text4">
+            <h1 className="font-normal text-[28px] leading-[1.29167] tracking-[0.02em] text-center text-[#fff] mt-[250px]">What skills do I currently know?</h1>
           </div>
 
-          <div className="platform_cards flex justify-center gap-[90px]">
-            <div className="card mt-[160px]">
-              <div className="box rounded-[20px] w-[350px] h-[380px] flex flex-col items-center pt-[30px] [box-shadow:0_10px_60px_0_rgba(38,_45,_118,_0.08)] bg-[#fff] relative">
-                <div className="circle rounded-full w-[80px] h-[80px] bg-[#5b72ee] [box-shadow:0_10px_40px_0_rgba(54,_61,_136,_0.06)] flex justify-center items-center absolute -top-[40px]">
-                  <Image src="/pay.png" width={50} height={50} alt="logo" />
-                </div>
-
-                <div className="mt-[60px] px-[20px] text-center">
-                  <h1 className="text-[20px] font-semibold text-[#333] leading-[28px]">
-                    Talabalarni Boshqarish
-                  </h1>
-                  <p className="text-[#666] text-[18px] leading-[24px] max-w-[341px] mt-[30px]">
-                    Talabalar bilan aloqani oson va samarali boshqarish. Ularni
-                    ro‘yxatdan o‘tkazish, darslarni jadvalga qo‘yish va o‘quv
-                    jarayonini kuzatish imkoniyatlari.
-                  </p>
-                </div>
-              </div>
+          <div className="card">
+            <div className="box flex justify-center gap-[30px] mt-[40px]">
+              <Image src="/figma.svg" alt="figma" width={50} height={50} />
+              <Image src="/react.svg" alt="react" width={50} height={50} />
+              <Image src="/c.svg" alt="c" width={50} height={50} />
+              <Image src="/node.svg" alt="node" width={50} height={50} />
+              <Image src="/vss.svg" alt="vss" width={50} height={50} />
+              <Image src="/js.svg" alt="js" width={50} height={50} />
+              <Image src="/css.svg" alt="css" width={50} height={50} />
             </div>
+          </div>
 
-            <div className="card mt-[160px]">
-              <div className="box rounded-[20px] w-[350px] h-[380px] flex flex-col items-center pt-[30px] [box-shadow:0_10px_60px_0_rgba(38,_45,_118,_0.08)] bg-[#fff] relative">
-                <div className="circle rounded-full w-[80px] h-[80px] bg-[#00CBB8] [box-shadow:0_10px_40px_0_rgba(54,_61,_136,_0.06)] flex justify-center items-center absolute -top-[40px]">
-                  <Image
-                    src="/classroom.png"
-                    width={50}
-                    height={50}
-                    alt="logo"
-                  />
-                </div>
+          <div className="box2 flex justify-center gap-[40px] mt-[32px]">
+            <Image src="/xd.svg" alt="xd" width={50} height={50} />
+            <Image src="/next.svg" alt="next" width={50} height={50} />
+            <Image src="/g.svg" alt="g" width={50} height={50} />
+            <Image src="/ai.svg" alt="ai" width={50} height={50} />
+            <Image
+              src="/express.svg"
+              alt="express"
+              width={50}
+              height={50}
+            />
+          </div>
 
-                <div className="mt-[60px] px-[20px] text-center">
-                  <h1 className="text-[20px] font-semibold text-[#333] leading-[28px]">
-                    Xonalar Boshqaruvi
-                  </h1>
-                  <p className="text-[#666] text-[18px] leading-[24px] max-w-[341px] mt-[30px]">
-                    Xonalarni onlayn tarzda rejalashtirish, guruhlarni ajratish
-                    va o'quv jarayonini qulay tarzda tashkil etish
-                    imkoniyatlari. Xonalar band qilinishi va darslar
-                    o‘tkazilishi mumkin.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="card mt-[160px]">
-              <div className="box rounded-[20px] w-[350px] h-[380px] flex flex-col items-center pt-[30px] [box-shadow:0_10px_60px_0_rgba(38,_45,_118,_0.08)] bg-[#fff] relative">
-                <div className="circle rounded-full w-[80px] h-[80px] bg-[#29B9E7] [box-shadow:0_10px_40px_0_rgba(54,_61,_136,_0.06)] flex justify-center items-center absolute -top-[40px]">
-                  <Image src="/report.png" width={40} height={40} alt="logo" />
-                </div>
-
-                <div className="mt-[60px] px-[20px] text-center">
-                  <h1 className="text-[20px] font-semibold text-[#333] leading-[28px]">
-                    Hisobotlar va Tahlil
-                  </h1>
-                  <p className="text-[#666] text-[18px] leading-[24px] max-w-[341px] mt-[30px]">
-                    Darslar va talabalar bilan bog‘liq barcha ma'lumotlarni
-                    to‘plang, tahlil qiling va maqsadli hisobotlar yaratib o'quv
-                    markazi boshqaruviga ko'rsatmalar bering.
-                  </p>
-                </div>
-              </div>
-            </div>
+          <div className="rasm flex justify-center">
+            <Image
+              src="/Skills (1).png"
+              alt="skills"
+              width={980}
+              height={400}
+            />
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </>
   );
 };
 

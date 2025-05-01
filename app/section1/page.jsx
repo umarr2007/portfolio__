@@ -1,69 +1,43 @@
 import React from "react";
+import Image from "next/image";
 
 const Section1 = () => {
   return (
     <div>
-      <section>
+      <section className="about mt-[200px]">
         <div className="container max-w-[1440px] mx-auto">
-          <div className="about_wrapper mt-[100px]">
-            <div className="about_text">
-              <h1 className="font-[600] text-[48px] leading-[1.3] text-center text-[#010514]">
-                Bizning Muvaffaqiyatimiz
-              </h1>
-              <p className="font-normal text-[18px] leading-[1.6] text-center text-[rgba(1,_5,_20,_0.8)] mt-[50px]">
-                O'quv markazimizning muvaffaqiyatlari talabalarimizning
-                o'qishdagi yutuqlari bilan belgilanadi. Har <br /> bir
-                talabaning o'z maqsadlariga erishishiga yordam beramiz.
-              </p>
-
-              <div className="about1_wrapper mt-[70px] flex items-center justify-between">
-                <div>
-                  <h1 className="font-light text-[85px] leading-none bg-gradient-to-r from-[#FFD700] to-[#FF8C00] bg-clip-text text-transparent text-center">
-                    5K+
-                  </h1>
-
-                  <p className="font-[600] text-[32px] leading-[1.3] text-[rgba(1,_5,_20,_0.8)] mt-[15px]">
-                    O'quvchilar
-                  </p>
-                </div>
-
-                <div>
-                  <h1 className="font-light text-[85px] text-center leading-none bg-gradient-to-r from-[#FFD700] to-[#FF8C00] bg-clip-text text-transparent">
-                    65%
-                  </h1>
-                  <p className="font-[600] text-[32px] leading-[1.3] text-[rgba(1,_5,_20,_0.8)] mt-[15px]">
-                    To'liq muvaffaqiyat
-                  </p>
-                </div>
-
-                <div>
-                  <h1 className="font-light text-center text-[85px] leading-none bg-gradient-to-r from-[#FFD700] to-[#FF8C00] bg-clip-text text-transparent">
-                    35
-                  </h1>
-                  <p className="font-[600] text-[32px] leading-[1.3] text-[rgba(1,_5,_20,_0.8)] mt-[15px]">
-                    Asosiy o'qituvchilar
-                  </p>
-                </div>
-
-                <div className="">
-                  <h1 className="font-light text-[85px] text-center leading-none bg-gradient-to-r from-[#FFD700] to-[#FF8C00] bg-clip-text text-transparent">
-                    15
-                  </h1>
-                  <p className="font-[600] text-[32px] leading-[1.3] text-[rgba(1,_5,_20,_0.8)] mt-[15px]">
-                    Bosh mutaxassislar
-                  </p>
-                </div>
-
-                <div>
-                  <h1 className="font-light text-center text-[85px] leading-none bg-gradient-to-r from-[#FFD700] to-[#FF8C00] bg-clip-text text-transparent">
-                    10
-                  </h1>
-                  <p className="font-[600] text-[32px] leading-[1.3] text-[rgba(1,_5,_20,_0.8)] mt-[15px]">
-                    Yillik tajriba
-                  </p>
-                </div>
-              </div>
+          <div className="me_wrapper flex items-center justify-center gap-[90px]">
+            <div className="left">
+              <Image src="/me.png" width={200} height={200} alt="logo" />
             </div>
+            <div className="right">
+              <h4 className=" font-normal text-[17px] tracking-[0.02em] underline [text-decoration-skip-ink:none] text-[#fff]">
+                My name is Umar
+              </h4>
+              <h1 className=" font-normal text-[50px] leading-[1.26664] tracking-[0.02em] text-[#fff]">
+                I am a programmer:
+                <br />
+                <span className="text-[#7127ba]">Front-End.</span>
+              </h1>
+              <p className=" font-normal text-[13px] tracking-[0.02em] text-[#fff]">
+                I am 17 years old.
+              </p>
+            </div>
+          </div>
+
+          <div className="text2 mt-[132px] flex flex-col items-center justify-center text-center">
+            <h1 className="font-normal text-[50px] tracking-[0.02em] text-[#fff]">
+              I'm a Developer.
+            </h1>
+            <h2 className="font-normal text-[15px] tracking-[0.02em] text-[#fff] mt-[10px]">
+              Currently, I'm a Front-at Youtube,
+            </h2>
+            <p className="font-normal text-[15px] tracking-[0.02em] text-[#fff] mt-[70px] max-w-[600px]">
+              I am currently studying Front-End. Let me tell you a little about
+              <br />
+              the Front-End field: It is a web developer who creates the
+              interface of sites
+            </p>
           </div>
         </div>
       </section>
