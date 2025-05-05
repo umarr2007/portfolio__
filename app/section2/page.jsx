@@ -1,7 +1,6 @@
 import React from "react";
 import Head from "next/head";
 import Image from "next/image";
-
 const Section2 = () => {
   return (
     <>
@@ -15,7 +14,9 @@ const Section2 = () => {
       <section>
         <div className="container max-w-[1440px] mx-auto">
           <div className="text4">
-            <h1 className="font-normal text-[28px] leading-[1.29167] tracking-[0.02em] text-center text-[#fff] mt-[250px]">What skills do I currently know?</h1>
+            <h1 className="font-normal text-[28px] leading-[1.29167] tracking-[0.02em] text-center text-[#fff] mt-[250px]">
+              What skills do I currently know?
+            </h1>
           </div>
 
           <div className="card">
@@ -35,12 +36,7 @@ const Section2 = () => {
             <Image src="/next.svg" alt="next" width={50} height={50} />
             <Image src="/g.svg" alt="g" width={50} height={50} />
             <Image src="/ai.svg" alt="ai" width={50} height={50} />
-            <Image
-              src="/express.svg"
-              alt="express"
-              width={50}
-              height={50}
-            />
+            <Image src="/express.svg" alt="express" width={50} height={50} />
           </div>
 
           <div className="rasm flex justify-center">
@@ -56,5 +52,4 @@ const Section2 = () => {
     </>
   );
 };
-
 export default Section2;

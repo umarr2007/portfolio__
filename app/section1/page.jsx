@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-
 const Section1 = () => {
   return (
     <div>
@@ -10,6 +9,7 @@ const Section1 = () => {
             <div className="left">
               <Image src="/me.png" width={200} height={200} alt="logo" />
             </div>
+
             <div className="right">
               <h4 className=" font-normal text-[17px] tracking-[0.02em] underline [text-decoration-skip-ink:none] text-[#fff]">
                 My name is Umar
@@ -44,5 +44,4 @@ const Section1 = () => {
     </div>
   );
 };
-
 export default Section1;
